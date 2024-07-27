@@ -7,8 +7,9 @@ import { UserModule } from './user/module/user.module';
 import { CountryModule } from './country/module/country.module';
 import { LeaderModule } from './leader/module/leader.module';
 import { CityModule } from './city/module/city.module';
-import { CityService } from './city/service/city.service';
-import { CityController } from './city/controller/city.controller';
+import { CourseModule } from './course/module/course.module';
+import { StudentModule } from './student/module/student.module';
+import { StudentCourseModule } from './student_course/module/student_course.module';
 
 @Module({
   imports: [
@@ -26,7 +27,10 @@ import { CityController } from './city/controller/city.controller';
     UserModule,
     CountryModule,
     LeaderModule,
-    CityModule, 
+    CityModule,
+    CourseModule,
+    StudentModule,
+    StudentCourseModule,
   ],
   controllers: [AppController],
   providers: [AppService],
